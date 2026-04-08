@@ -32,7 +32,6 @@ export default function MealList({ data }: any) {
   return (
     <div className="max-w-6xl mx-auto">
 
-      {/* 🔍 Search */}
       <MealSearch
         value={search}
         onChange={(e: any) => {
@@ -41,21 +40,18 @@ export default function MealList({ data }: any) {
         }}
       />
 
-      {/* 🍱 Grid */}
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {paginatedData.map((meal: any) => (
           <MealCard key={meal.idMeal} meal={meal} />
         ))}
       </div>
 
-      {/* ❌ empty */}
       {filtered.length === 0 && (
         <p className="text-center text-gray-500 mt-10">
           No meals found
         </p>
       )}
 
-      {/* 🔢 pagination */}
       {totalPages > 1 && (
         <MealPagination
           page={page}

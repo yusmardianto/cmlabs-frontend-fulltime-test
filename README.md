@@ -1,5 +1,7 @@
 # 🍽️ Meal App
 
+Preview : https://cmlabs-frontend-fulltime-test-seven.vercel.app/
+
 A modern web application to explore meals and ingredients using TheMealDB API.  
 Built with Next.js, Tailwind CSS, and Atomic Design principles.
 
@@ -104,11 +106,11 @@ Benefits:
 
 Clone repository:
 
-git clone https://github.com/your-username/meal-app.git
+git clone https://github.com/yusmardianto/cmlabs-frontend-fulltime-test.git
 
 Masuk ke project:
 
-cd meal-app
+cd cmlabs-frontend-fulltime-test
 
 Install dependencies:
 

@@ -4,11 +4,9 @@ export default function Home() {
   return (
     <main className="bg-gray-50">
 
-      {/* 🎯 HERO */}
       <section className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          {/* LEFT */}
           <div>
             <p className="text-sm text-gray-500 mb-3">
               🍽️ Meal App
@@ -40,7 +38,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
           <div className="relative">
             <img
               src="/top-view-table-full-food.jpg"
@@ -48,7 +45,6 @@ export default function Home() {
               className="rounded-3xl shadow-lg object-cover h-[320px] w-full"
             />
 
-            {/* floating badge */}
             <div className="absolute -bottom-4 -left-4 bg-white px-4 py-2 rounded-xl shadow text-sm">
               ⭐ 1000+ Recipes
             </div>
@@ -56,7 +52,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🍱 FEATURE SECTION */}
       <section className="max-w-6xl mx-auto px-4 pb-16">
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">
           Popular Categories
@@ -92,7 +87,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🚀 CTA */}
       <section className="max-w-6xl mx-auto px-4 pb-20">
         <div className="bg-black text-white rounded-3xl p-10 text-center">
           <h2 className="text-2xl md:text-3xl font-bold">

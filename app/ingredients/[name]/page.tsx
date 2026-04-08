@@ -3,7 +3,6 @@ import MealList from "@/components/meals/meal-list";
 import Link from "next/link";
 
 export default async function Page({ params }: any) {
-  // 🔥 FIX: handle params async
   const resolvedParams = await params;
 
   const rawName = resolvedParams?.name;
@@ -22,8 +21,7 @@ export default async function Page({ params }: any) {
 
   return (
     <main className="pb-10">
-      
-      {/* 📍 Breadcrumb */}
+ 
       <div className="max-w-6xl mx-auto px-4 mt-6 text-sm text-gray-500">
         <Link href="/">Home</Link> /{" "}
         <Link href="/ingredients">Ingredients</Link> /{" "}
@@ -32,7 +30,6 @@ export default async function Page({ params }: any) {
         </span>
       </div>
 
-      {/* 🎯 Hero */}
       <div className="max-w-6xl mx-auto px-4 mt-4">
         <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl py-14 text-center">
           <p className="text-sm text-gray-500 mb-2">
@@ -44,7 +41,6 @@ export default async function Page({ params }: any) {
         </div>
       </div>
 
-      {/* 🍱 Content */}
       <div className="max-w-6xl mx-auto px-4 mt-10">
         {!data?.meals ? (
           <p className="text-center text-gray-500">

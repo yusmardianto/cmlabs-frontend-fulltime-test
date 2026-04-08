@@ -30,14 +30,12 @@ export default async function Page({ params }: any) {
   return (
     <main className="pb-20 bg-gray-50">
       
-      {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-4 pt-6 text-sm text-gray-400">
         <Link href="/">Home</Link> /{" "}
         <Link href="/ingredients">Ingredients</Link> /{" "}
         <span className="text-gray-700">{meal.strMeal}</span>
       </div>
 
-      {/* HERO */}
       <div className="max-w-6xl mx-auto px-4 mt-4">
         <div className="relative h-[380px] md:h-[460px] rounded-[28px] overflow-hidden shadow-lg">
           
@@ -66,10 +64,8 @@ export default async function Page({ params }: any) {
         </div>
       </div>
 
-      {/* CONTENT */}
       <div className="max-w-6xl mx-auto px-4 mt-12 grid md:grid-cols-3 gap-10">
         
-        {/* Ingredients */}
         <div className="bg-white rounded-3xl p-6 shadow-md shadow-gray-100">
           <h2 className="font-semibold text-lg mb-5">
             Ingredients
@@ -92,7 +88,6 @@ export default async function Page({ params }: any) {
           </div>
         </div>
 
-        {/* Instructions */}
         <div className="md:col-span-2 bg-white rounded-3xl p-6 shadow-md shadow-gray-100">
           <h2 className="font-semibold text-lg mb-5">
             Instructions
@@ -104,7 +99,6 @@ export default async function Page({ params }: any) {
         </div>
       </div>
 
-      {/* VIDEO */}
       {youtubeId && (
         <div className="max-w-6xl mx-auto px-4 mt-14">
           <div className="bg-white rounded-3xl p-6 shadow-md shadow-gray-100">

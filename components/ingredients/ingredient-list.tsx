@@ -32,7 +32,6 @@ export default function IngredientList({ data }: any) {
   return (
     <div className="max-w-6xl mx-auto">
 
-      {/* 🔍 Search */}
       <IngredientSearch
         value={search}
         onChange={(e: any) => {
@@ -41,21 +40,18 @@ export default function IngredientList({ data }: any) {
         }}
       />
 
-      {/* 🧩 Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
         {paginatedData.map((item: any) => (
           <IngredientCard key={item.idIngredient} item={item} />
         ))}
       </div>
 
-      {/* ❌ Empty */}
       {filtered.length === 0 && (
         <p className="text-center text-gray-500 mt-10">
           No ingredient found
         </p>
       )}
 
-      {/* 🔢 Pagination */}
       {totalPages > 1 && (
         <IngredientPagination
           page={page}
